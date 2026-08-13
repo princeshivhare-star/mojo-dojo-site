@@ -587,6 +587,8 @@ p{ margin:0; }
   min-height:300px;
   display:flex;
   flex-direction:column;
+  /* center the main text block vertically so middle card aligns with reference */
+  justify-content:center;
   color:#fff;
   overflow:hidden;
   isolation:isolate;
@@ -614,8 +616,12 @@ p{ margin:0; }
   font-weight:700;
   letter-spacing:.1em;
   color:rgba(255,255,255,.55);
-  margin-bottom:auto;
-  padding-bottom:34px;
+  /* pin the index to top-left so vertical centering of content doesn't shift it */
+  position:absolute;
+  top:18px;
+  left:20px;
+  margin:0;
+  padding:0;
 }
 .card-icon{
   width:44px; height:44px;
@@ -644,7 +650,8 @@ p{ margin:0; }
 }
 
 .learn-more{
-  margin-top:auto;
+  /* place learn-more slightly below the paragraph like the reference */
+  margin-top:18px;
   display:inline-flex;
   align-items:center;
   gap:6px;
