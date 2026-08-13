@@ -529,14 +529,12 @@ p{ margin:0; }
   color:#fff;
   animation:marquee 40s linear infinite;
 }
-.marquee-track + .marquee-track{ margin-top:10px; }
-.marquee-band .marquee-track:nth-child(2){ animation-duration:32s; }
 .m-red{ color:var(--red-bright); }
 .m-dot{ color:var(--ink-faint); font-weight:400; }
 
 @keyframes marquee{
   from{ transform:translateX(0); }
-  to{ transform:translateX(-50%); }
+  to{ transform:translateX(-100%); }
 }
 
 /* ==========================================================
