@@ -324,13 +324,15 @@ p{ margin:0; }
 .hero-top{
   position:relative;
   z-index:1;
-  display:flex;
-  flex-wrap:wrap;
-  align-items:flex-start;
-  justify-content:space-between;
+  /* use grid so the video block can span both columns and edges align */
+  display:grid;
+  grid-template-columns: minmax(0,540px) 1fr;
+  align-items:start;
   gap:48px;
   padding:72px 54px 44px;
 }
+/* make the video block span full width under the hero columns */
+.hero .video-block{ grid-column:1 / -1; }
 .hero-headline{
   flex:1 1 500px;
   max-width:640px;
@@ -592,6 +594,8 @@ p{ margin:0; }
   isolation:isolate;
   transition:transform .4s var(--ease), box-shadow .4s var(--ease);
 }
+/* lower the middle (SEO) card content slightly to match reference */
+.card-seo{ padding-top:52px; }
 .card::before{
   content:'';
   position:absolute; inset:0;
@@ -601,7 +605,7 @@ p{ margin:0; }
     radial-gradient(circle at 30% 20%, rgba(255,255,255,.12), transparent 45%);
 }
 .card-media{ background:linear-gradient(180deg, rgba(15,37,116,.82), rgba(202,47,41,.88)), url('../assets/testimonial-4.jpg') center/cover; }
-.card-seo{ background:linear-gradient(180deg, rgba(15,37,116,.82), rgba(202,47,41,.88)), url('../assets/testimonial-2.jpg') center/cover; }
+.card-seo{ background:linear-gradient(180deg, rgba(15,37,116,.82), rgba(202,47,41,.88)), url('../assets/card-seo-bg.png') center/cover; }
 .card-creative{ background:linear-gradient(180deg, rgba(15,37,116,.82), rgba(202,47,41,.88)), url('../assets/testimonial-3.jpg') center/cover; }
 
 .card:hover{
