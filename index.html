@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mojo Dojo — Performance Marketing Built for Enterprise Scale</title>
+<meta name="description" content="We align data science with elite creative to drive predictable pipeline and measurable revenue for high-growth brands." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Yellowtail&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- Hidden SVG filters (grain effect) -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="grainNoise" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence id="grainTurb" type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" seed="7"/>
+      <feColorMatrix in="noise" type="matrix"
+        values="0 0 0 0 0.85
+                0 0 0 0 0.18
+                0 0 0 0 0.15
+                0 0 0 0.9 0"/>
+    </filter>
+  </defs>
+</svg>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo" aria-label="Mojo Dojo home">mojo dojo</a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#insights">Insights</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-nav">
+      <span>Book a Growth Audit</span>
+      <svg class="btn-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#insights">Insights</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-nav btn-nav-mobile"><span>Book a Growth Audit</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="grain-decor" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-top reveal">
+        <h1 class="hero-headline">Performance marketing built for enterprise scale.</h1>
+
+        <div class="hero-aside">
+          <p class="hero-sub">We align data science with elite creative to drive predictable pipeline and measurable revenue for high-growth brands.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">
+              <span>Start your growth engine</span>
+              <svg class="btn-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#work" class="btn btn-outline"><span>View our work</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-block reveal" id="videoBlock">
+        <div class="video-grid" id="videoGrid">
+
+          <div class="thumb thumb-1" style="background-image:url('assets/testimonial-1.jpg')">
+            <span class="thumb-stat"><span class="count" data-count="353" data-suffix="%">0%</span><small>Increase in conversions</small></span>
+            <span class="thumb-name">Jeff Hogg, R3 Health</span>
+            <img class="thumb-mark" src="assets/logo-white.png" alt="" />
+          </div>
+
+          <div class="thumb thumb-2" style="background-image:url('assets/testimonial-2.jpg')">
+            <span class="thumb-quote">&ldquo;Lots of people found us on the internet because of Mojo Dojo&rdquo;</span>
+            <span class="thumb-name">Rachel, Aussie Time</span>
+            <img class="thumb-mark" src="assets/logo-white.png" alt="" />
+          </div>
+
+          <div class="thumb thumb-3" style="background-image:url('assets/testimonial-3.jpg')">
+            <span class="thumb-stat"><span class="count" data-count="80" data-suffix="%">0%</span><small>Increase in revenue</small></span>
+            <span class="thumb-name">Bianca, Bekle Fitness</span>
+            <img class="thumb-mark" src="assets/logo-white.png" alt="" />
+          </div>
+
+          <div class="thumb thumb-4" style="background-image:url('assets/testimonial-4.jpg')">
+            <span class="thumb-stat"><span class="count" data-count="50" data-suffix="%">0%</span><small>Business growth</small></span>
+            <span class="thumb-name">Dipal, Laws In Order</span>
+            <img class="thumb-mark" src="assets/logo-white.png" alt="" />
+          </div>
+
+          <div class="thumb thumb-5" style="background-image:url('assets/testimonial-5.jpg')">
+            <span class="thumb-stat money"><span class="count" data-count="400" data-prefix="$" data-suffix="k">$0k</span><small>Increase in revenue within just 1 year</small></span>
+            <span class="thumb-name">Paul, The Wood People</span>
+            <img class="thumb-mark" src="assets/logo-white.png" alt="" />
+          </div>
+
+          <div class="thumb thumb-6" style="background-image:url('assets/testimonial-6.jpg')">
+            <span class="thumb-stat"><span class="count" data-count="70" data-suffix="%">0%</span><small>Increase in Online Revenue</small></span>
+            <span class="thumb-name">Andrew, The Glue Club</span>
+            <img class="thumb-mark" src="assets/logo-white.png" alt="" />
+          </div>
+
+        </div>
+
+        <button class="play-btn" id="playBtn" aria-label="Play Mojo Dojo case study reel">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M8 5.5V20.5L21 13L8 5.5Z" fill="currentColor"/></svg>
+        </button>
+      </div>
+
+      <div class="trust-bar reveal">
+        <p class="trust-label">Trusted by high-growth enterprises worldwide</p>
+        <div class="trust-logos">
+          <span class="tlogo">&#10052; Snowflake</span>
+          <span class="tlogo">{ } Stripe</span>
+          <span class="tlogo">&#9743; Salesforce</span>
+          <span class="tlogo">&#8623; HubSpot</span>
+          <span class="tlogo">&#8862; Atlassian</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE BAND ============ -->
+  <div class="marquee-wrap reveal" aria-hidden="true">
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <span class="m-red">SCALE</span><span class="m-dot">&middot;</span><span>RESULTS</span><span class="m-dot">&middot;</span><span class="m-red">PERFORMANCE</span><span class="m-dot">&middot;</span><span>GROWTH</span><span class="m-dot">&middot;</span>
+        <span class="m-red">SCALE</span><span class="m-dot">&middot;</span><span>RESULTS</span><span class="m-dot">&middot;</span><span class="m-red">PERFORMANCE</span><span class="m-dot">&middot;</span><span>GROWTH</span><span class="m-dot">&middot;</span>
+        <span class="m-red">SCALE</span><span class="m-dot">&middot;</span><span>RESULTS</span><span class="m-dot">&middot;</span><span class="m-red">PERFORMANCE</span><span class="m-dot">&middot;</span><span>GROWTH</span><span class="m-dot">&middot;</span>
+        <span class="m-red">SCALE</span><span class="m-dot">&middot;</span><span>RESULTS</span><span class="m-dot">&middot;</span><span class="m-red">PERFORMANCE</span><span class="m-dot">&middot;</span><span>GROWTH</span><span class="m-dot">&middot;</span>
+      </div>
+      <div class="marquee-track" aria-hidden="true">
+        <span class="m-red">SCALE</span><span class="m-dot">&middot;</span><span>RESULTS</span><span class="m-dot">&middot;</span><span class="m-red">PERFORMANCE</span><span class="m-dot">&middot;</span><span>GROWTH</span><span class="m-dot">&middot;</span>
+        <span class="m-red">SCALE</span><span class="m-dot">&middot;</span><span>RESULTS</span><span class="m-dot">&middot;</span><span class="m-red">PERFORMANCE</span><span class="m-dot">&middot;</span><span>GROWTH</span><span class="m-dot">&middot;</span>
+        <span class="m-red">SCALE</span><span class="m-dot">&middot;</span><span>RESULTS</span><span class="m-dot">&middot;</span><span class="m-red">PERFORMANCE</span><span class="m-dot">&middot;</span><span>GROWTH</span><span class="m-dot">&middot;</span>
+        <span class="m-red">SCALE</span><span class="m-dot">&middot;</span><span>RESULTS</span><span class="m-dot">&middot;</span><span class="m-red">PERFORMANCE</span><span class="m-dot">&middot;</span><span>GROWTH</span><span class="m-dot">&middot;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ WHAT WE DO ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><span></span>What we do</p>
+          <h2>Full-funnel solutions that trigger compounding growth.</h2>
+        </div>
+        <a href="#services" class="btn btn-ghost">Explore all services</a>
+      </div>
+
+      <div class="card-grid reveal">
+        <article class="card card-media">
+          <span class="card-index">01</span>
+          <span class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 5h13l5 5v9H3V5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16 5v5h5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9" cy="14.5" r="2.2" stroke="currentColor" stroke-width="1.5"/></svg>
+          </span>
+          <h3>Paid Media Management</h3>
+          <p>High-intent search, social, and programmatic campaigns engineered to capture market share and maximise return on ad spend.</p>
+          <a class="learn-more" href="#services"><span>Learn more</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="card card-seo">
+          <span class="card-index">02</span>
+          <span class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+          </span>
+          <h3>SEO &amp; Search Authority</h3>
+          <p>Dominating the search landscape through technical optimisation, data-backed content strategies, and sustainable revenue generation.</p>
+          <a class="learn-more" href="#services"><span>Learn more</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="card card-creative">
+          <span class="card-index">03</span>
+          <span class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 20c0-4 3-6 5-9 1.4-2 1-4.5 3-6.5C13.5 3 16 3 17 4s1 3.5-1 5c-2 2-4.5 1.6-6.5 3-3 2-5 5-5 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 6l4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <h3>High-Conversion Creative</h3>
+          <p>Performance-driven design, copy, and video assets optimised specifically to lower acquisition costs and drive conversion velocity.</p>
+          <a class="learn-more" href="#services"><span>Learn more</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CASE STUDY ============ -->
+  <section class="section section-case" id="work">
+    <div class="container case-grid">
+      <div class="case-copy reveal">
+        <p class="eyebrow"><span></span>Case study</p>
+        <h2>Real metrics.<br/>Unprecedented scale.</h2>
+        <a href="#work" class="btn btn-outline">Read full case study</a>
+      </div>
+
+      <div class="case-card reveal">
+        <div class="case-card-top">
+          <h3>How we accelerated CloudScale&rsquo;s expansion into APAC.</h3>
+          <div class="case-stats">
+            <div class="stat">
+              <span class="count" data-count="142" data-prefix="+" data-suffix="%">+0%</span>
+              <small>Increase in Pipeline Value</small>
+            </div>
+            <div class="stat">
+              <span class="count" data-count="34" data-prefix="&minus;" data-suffix="%">&minus;0%</span>
+              <small>Reduction in Customer Acquisition Cost (CAC)</small>
+            </div>
+            <div class="stat">
+              <span class="count" data-count="12.4" data-decimals="1" data-prefix="$" data-suffix="M">$0M</span>
+              <small>Net-New Revenue Generated</small>
+            </div>
+          </div>
+        </div>
+        <svg class="case-chart" viewBox="0 0 800 160" preserveAspectRatio="none" aria-hidden="true">
+          <path class="case-chart-path" d="M0,140 C60,138 100,132 150,130 C220,127 260,120 320,112 C380,104 420,95 470,80 C520,65 560,55 610,42 C660,30 700,18 760,8 L800,4" />
+          <circle class="case-chart-dot" cx="800" cy="4" r="5" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo logo-white">mojo dojo</a>
+        <p>Performance engine constructed for premium enterprise organizations demanding precision, clarity, and compounding pipeline.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <a href="#services">Paid Search</a>
+        <a href="#services">Paid Social</a>
+        <a href="#services">Search Authority</a>
+        <a href="#services">Creative Lab</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Agency</h4>
+        <a href="#work">Our Work</a>
+        <a href="#about">Our System</a>
+        <a href="#about">About Us</a>
+        <a href="#insights">Insights</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="#contact">New Client Intake</a>
+        <a href="#contact">Careers</a>
+        <a href="#contact">Security</a>
+        <a href="#contact">Direct Command</a>
+      </div>
+    </div>
+
+    <hr class="footer-divider" />
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mojo Dojo Digital. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#">LinkedIn</a>
+        <a href="#">X&ndash;Twitter</a>
+        <a href="#">GitHub</a>
+        <a href="#">Direct Dial</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
