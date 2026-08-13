@@ -63,7 +63,7 @@
     const decimals = parseInt(el.dataset.decimals || '0', 10);
     const prefix = el.dataset.prefix || '';
     const suffix = el.dataset.suffix || '';
-    const duration = 1500;
+    const duration = 3000; /* slightly slower count-up for better perception */
     const start = performance.now();
 
     function tick(now) {

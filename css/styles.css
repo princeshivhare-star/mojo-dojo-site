@@ -326,7 +326,7 @@ p{ margin:0; }
   z-index:1;
   display:flex;
   flex-wrap:wrap;
-  align-items:flex-end;
+  align-items:flex-start;
   justify-content:space-between;
   gap:48px;
   padding:72px 54px 44px;
@@ -514,7 +514,7 @@ p{ margin:0; }
 }
 .marquee-band{
   background:var(--dark);
-  transform:rotate(-2.2deg) scale(1.04);
+  transform:none;
   padding-block:16px;
 }
 .marquee-track{
@@ -527,7 +527,7 @@ p{ margin:0; }
   font-weight:700;
   letter-spacing:.08em;
   color:#fff;
-  animation:marquee 32s linear infinite;
+  animation:marquee 40s linear infinite;
 }
 .marquee-track + .marquee-track{ margin-top:10px; }
 .marquee-band .marquee-track:nth-child(2){ animation-duration:32s; }
@@ -730,7 +730,8 @@ p{ margin:0; }
   height:var(--bar-height, 26px);
   background:linear-gradient(to top, rgba(234,74,52,.9), rgba(255,255,255,.32));
   transform-origin:bottom;
-  animation:chart-bar 2.6s ease-in-out infinite alternate;
+  /* slowed slightly for a more deliberate rising effect */
+  animation:chart-bar 4.6s ease-in-out infinite alternate;
 }
 .case-bars i:nth-child(2n){ animation-delay:.25s; }
 .case-bars i:nth-child(3n){ animation-delay:.6s; }
@@ -790,13 +791,15 @@ p{ margin:0; }
   stroke-linecap:round;
   stroke-dasharray:1100;
   stroke-dashoffset:1100;
-  transition:stroke-dashoffset 1.8s var(--ease-out);
+  /* slower draw for a smoother reveal */
+  transition:stroke-dashoffset 3.6s var(--ease-out);
 }
 .case-card.in-view .case-chart-path{ stroke-dashoffset:0; }
 .case-chart-dot{
   fill:var(--red-bright);
   opacity:0;
-  transition:opacity .4s var(--ease) 1.6s;
+  /* delay the dot until the line has more fully drawn */
+  transition:opacity .4s var(--ease) 3.2s;
 }
 .case-card.in-view .case-chart-dot{ opacity:1; }
 
